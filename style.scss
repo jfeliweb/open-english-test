@@ -1,0 +1,104 @@
+// Overide
+@import url(https://fonts.googleapis.com/css?family=mulishsh:200,300,regular,500,600,700,800,900);
+
+$font-regular-24: normal regular 24px/32px 'Mulish', sans-serif;
+
+$font-semi-bold-20: normal 600 20px/28px 'Mulish', sans-serif;
+$font-semi-bold-22: normal 600 22px/27px 'Mulish', sans-serif;
+$font-semi-bold-28: normal 600 28px/36px 'Mulish', sans-serif;
+
+$font-bold-16: normal uppercase 700 16px/10px 'Mulish', sans-serif;
+$font-bold-24: normal 700 24px/32px 'Mulish', sans-serif;
+$font-bold-28: normal 700 28px/19px 'Mulish', sans-serif;
+$font-bold-30: normal uppercase 700 30px/15px 'Mulish', sans-serif;
+
+$font-extra-bold-18: normal uppercase 800 18px/50px 'Mulish', sans-serif;
+$font-extra-bold-26: normal uppercase 800 26px/40px 'Mulish', sans-serif;
+$font-extra-bold-28: normal 800 28px/36px 'Mulish', sans-serif;
+$font-extra-bold-32: normal uppercase 800 32px/42px 'Mulish', sans-serif;
+$font-extra-bold-30: normal uppercase 800 30px/38px 'Mulish', sans-serif;
+
+:root {
+	/* Colors: */
+	--blue: #0084ff;
+	--orange: #ff7b00;
+	--lime: #bcff41;
+	--white: #ffffff;
+	--yellow: #fffc00;
+	--dark-gray: #404040;
+	--prim-blue: #0157ba;
+	--teal: #25cad3;
+	--snow-white: #eaf7ff;
+	--red-organge: #ff6d00;
+	--dark: #000000;
+
+	/* Font/text values */
+	--unnamed-font-family-mulish: 'Mulish', sans-serif;
+	--unnamed-font-style-normal: normal;
+	--unnamed-font-weight-regular: regular;
+	--unnamed-font-weight-bold: bold;
+	--unnamed-font-weight-normal: normal;
+	--unnamed-font-size-16: 16px;
+	--unnamed-font-size-24: 24px;
+	--unnamed-font-size-38: 38px;
+	--unnamed-character-spacing-0: 0px;
+	--unnamed-line-spacing-28: 28px;
+	--unnamed-line-spacing-54: 54px;
+	--unnamed-line-spacing-28-80000114440918: 28.80000114440918px;
+}
+
+/* Character Styles */
+.unnamed-character-style-1 {
+	font-family: var(--unnamed-font-family-mulish);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-normal);
+	font-size: var(--unnamed-font-size-16);
+	line-height: var(--unnamed-line-spacing-28);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--dark-gray);
+}
+.unnamed-character-style-2 {
+	font-family: var(--unnamed-font-family-mulish);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-16);
+	line-height: var(--unnamed-line-spacing-28);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--unnamed-color-ff6600);
+}
+.unnamed-character-style-3 {
+	font-family: var(--unnamed-font-family-mulish);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-24);
+	line-height: var(--unnamed-line-spacing-28-80000114440918);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--dark);
+}
+.unnamed-character-style-4 {
+	font-family: var(--unnamed-font-family-mulish);
+	font-style: var(--unnamed-font-style-normal);
+	font-weight: var(--unnamed-font-weight-bold);
+	font-size: var(--unnamed-font-size-38);
+	line-height: var(--unnamed-line-spacing-54);
+	letter-spacing: var(--unnamed-character-spacing-0);
+	color: var(--dark);
+}
+//@import './node_modules/bootstrap/scss/bootstrap';
+
+// Required
+@import './node_modules/bootstrap/scss/functions';
+@import './node_modules/bootstrap/scss/variables';
+@import './node_modules/bootstrap/scss/mixins';
+
+// Optional
+@import './node_modules/bootstrap/scss/reboot';
+@import './node_modules/bootstrap/scss/type';
+@import './node_modules/bootstrap/scss/images';
+@import './node_modules/bootstrap/scss/buttons';
+@import './node_modules/bootstrap/scss/grid';
+
+.main-form {
+	width: 450px;
+	margin: auto;
+}
