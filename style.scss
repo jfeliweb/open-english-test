@@ -136,8 +136,25 @@ header {
 
 		.cta-text {
 			font: $font-extra-bold-18;
+			font-size: 14px;
 			text-transform: uppercase;
 			color: var(--prim-blue);
+			padding-right: 6px;
+		}
+
+		.btn {
+			padding: 12px;
+			text-transform: uppercase;
+		}
+
+		@media screen and (min-width: 992px) {
+			.cta-text {
+				font-size: 18px;
+			}
+			.btn {
+				width: 218px;
+				padding: 15px;
+			}
 		}
 	}
 }
@@ -179,15 +196,21 @@ header {
 	}
 
 	.hero-video {
-		padding: 30px 0;
+		padding: 0;
+
+		iframe {
+			height: 213px;
+		}
 	}
 
 	.hero-button {
-		// padding-bottom: 50px;
+		margin-top: 15px;
 
 		.btn {
+			font: $font-bold-30;
 			text-transform: uppercase;
-			padding: 16px 30px;
+			padding: 1rem 3rem;
+			border-radius: 45px;
 			box-shadow: 0px 15px 58px #00000038;
 		}
 	}

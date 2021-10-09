@@ -7544,8 +7544,25 @@ header .cta-header {
 
 header .cta-header .cta-text {
   font: normal 800 18px/50px "Mulish", sans-serif;
+  font-size: 14px;
   text-transform: uppercase;
   color: var(--prim-blue);
+  padding-right: 6px;
+}
+
+header .cta-header .btn {
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 992px) {
+  header .cta-header .cta-text {
+    font-size: 18px;
+  }
+  header .cta-header .btn {
+    width: 218px;
+    padding: 15px;
+  }
 }
 
 .hero {
@@ -7586,12 +7603,22 @@ header .cta-header .cta-text {
 }
 
 .hero .hero-video {
-  padding: 30px 0;
+  padding: 0;
+}
+
+.hero .hero-video iframe {
+  height: 213px;
+}
+
+.hero .hero-button {
+  margin-top: 15px;
 }
 
 .hero .hero-button .btn {
+  font: normal 700 30px/15px "Mulish", sans-serif;
   text-transform: uppercase;
-  padding: 16px 30px;
+  padding: 1rem 3rem;
+  border-radius: 45px;
   -webkit-box-shadow: 0px 15px 58px #00000038;
           box-shadow: 0px 15px 58px #00000038;
 }
