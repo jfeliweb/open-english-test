@@ -7480,6 +7480,26 @@ body .btn {
 }
 
 header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  header .logo {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+}
+
+header .logo img {
   padding: 35px 0;
 }
 
@@ -7501,7 +7521,7 @@ header .cta-header .btn {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   header .cta-header .cta-text {
     font-size: 18px;
   }
@@ -7518,11 +7538,23 @@ header .cta-header .btn {
   height: 714px;
 }
 
-@media screen and (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .hero {
     background-image: -webkit-image-set(url("/assets/images/Hero-Andres+Thumb.png") 1x, url("/assets/images/Hero-Andres+Thumb@2x.png") 2x);
     background-image: image-set(url("/assets/images/Hero-Andres+Thumb.png") 1x, url("/assets/images/Hero-Andres+Thumb@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 50%;
     height: 580px;
+  }
+  .hero .container {
+    margin-top: 5rem;
+  }
+  .hero .container .hero-video {
+    padding: 0;
+  }
+  .hero .container .hero-video iframe {
+    height: 293px;
   }
 }
 

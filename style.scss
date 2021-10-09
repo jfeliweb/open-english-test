@@ -76,7 +76,17 @@ body {
 
 header {
 	.logo {
-		padding: 35px 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include media-breakpoint-between(lg, xl) {
+			justify-content: start;
+		}
+
+		img {
+			padding: 35px 0;
+		}
 	}
 	.cta-header {
 		background-color: var(--yellow);
@@ -95,7 +105,7 @@ header {
 			text-transform: uppercase;
 		}
 
-		@media screen and (min-width: 992px) {
+		@include media-breakpoint-between(lg, xl) {
 			.cta-text {
 				font-size: 18px;
 			}
@@ -113,12 +123,27 @@ header {
 	text-align: center;
 	height: 714px;
 
-	@media screen and (min-width: 992px) {
+	@include media-breakpoint-between(lg, xl) {
 		background-image: image-set(
 			url('/assets/images/Hero-Andres+Thumb.png') 1x,
 			url('/assets/images/Hero-Andres+Thumb@2x.png') 2x
 		);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 60% 50%;
 		height: 580px;
+
+		.container {
+			margin-top: 5rem;
+
+			.hero-video {
+				padding: 0;
+
+				iframe {
+					height: 293px;
+				}
+			}
+		}
 	}
 
 	.hero-content {
