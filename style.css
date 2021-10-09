@@ -7559,7 +7559,7 @@ header .cta-header .cta-text {
   .hero {
     background-image: -webkit-image-set(url("/assets/images/Hero-Andres+Thumb.png") 1x, url("/assets/images/Hero-Andres+Thumb@2x.png") 2x);
     background-image: image-set(url("/assets/images/Hero-Andres+Thumb.png") 1x, url("/assets/images/Hero-Andres+Thumb@2x.png") 2x);
-    height: auto;
+    height: 580px;
   }
 }
 
