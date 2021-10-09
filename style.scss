@@ -1,22 +1,25 @@
 // Overide
-@import url(https://fonts.googleapis.com/css?family=mulishsh:200,300,regular,500,600,700,800,900);
+// Google Font Mulish
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700;800&display=swap');
 
-$font-regular-24: normal regular 24px/32px 'Mulish', sans-serif;
+$font-regular-24: normal 400 24px/32px 'Mulish', sans-serif;
 
 $font-semi-bold-20: normal 600 20px/28px 'Mulish', sans-serif;
 $font-semi-bold-22: normal 600 22px/27px 'Mulish', sans-serif;
 $font-semi-bold-28: normal 600 28px/36px 'Mulish', sans-serif;
 
-$font-bold-16: normal uppercase 700 16px/10px 'Mulish', sans-serif;
+$font-bold-16: normal 700 16px/10px 'Mulish', sans-serif;
 $font-bold-24: normal 700 24px/32px 'Mulish', sans-serif;
 $font-bold-28: normal 700 28px/19px 'Mulish', sans-serif;
-$font-bold-30: normal uppercase 700 30px/15px 'Mulish', sans-serif;
+$font-bold-30: normal 700 30px/15px 'Mulish', sans-serif;
 
-$font-extra-bold-18: normal uppercase 800 18px/50px 'Mulish', sans-serif;
-$font-extra-bold-26: normal uppercase 800 26px/40px 'Mulish', sans-serif;
+$font-extra-bold-18: normal 800 18px/50px 'Mulish', sans-serif;
+$font-extra-bold-26: normal 800 26px/40px 'Mulish', sans-serif;
 $font-extra-bold-28: normal 800 28px/36px 'Mulish', sans-serif;
-$font-extra-bold-32: normal uppercase 800 32px/42px 'Mulish', sans-serif;
-$font-extra-bold-30: normal uppercase 800 30px/38px 'Mulish', sans-serif;
+$font-extra-bold-32: normal 800 32px/42px 'Mulish', sans-serif;
+$font-extra-bold-30: normal 800 30px/38px 'Mulish', sans-serif;
+
+$font-family-base: $font-regular-24;
 
 :root {
 	/* Colors: */
@@ -31,6 +34,7 @@ $font-extra-bold-30: normal uppercase 800 30px/38px 'Mulish', sans-serif;
 	--snow-white: #eaf7ff;
 	--red-organge: #ff6d00;
 	--dark: #000000;
+	--sky-blue: #eaf7ff;
 
 	/* Font/text values */
 	--unnamed-font-family-mulish: 'Mulish', sans-serif;
@@ -84,6 +88,12 @@ $font-extra-bold-30: normal uppercase 800 30px/38px 'Mulish', sans-serif;
 	letter-spacing: var(--unnamed-character-spacing-0);
 	color: var(--dark);
 }
+
+$theme-colors: (
+	'primary': #ff6d00,
+	'danger': #ff4136,
+);
+
 //@import './node_modules/bootstrap/scss/bootstrap';
 
 // Required
@@ -92,13 +102,150 @@ $font-extra-bold-30: normal uppercase 800 30px/38px 'Mulish', sans-serif;
 @import './node_modules/bootstrap/scss/mixins';
 
 // Optional
-@import './node_modules/bootstrap/scss/reboot';
+// @import './node_modules/bootstrap/scss/reboot';
 @import './node_modules/bootstrap/scss/type';
+@import './node_modules/bootstrap/scss/list-group';
 @import './node_modules/bootstrap/scss/images';
 @import './node_modules/bootstrap/scss/buttons';
 @import './node_modules/bootstrap/scss/grid';
+@import './node_modules/bootstrap/scss/carousel';
+@import './node_modules/bootstrap/scss/helpers';
+@import './node_modules/bootstrap/scss/containers';
+@import './node_modules/bootstrap/scss/bootstrap-utilities.scss';
+@import './node_modules/bootstrap/scss/bootstrap-reboot.scss';
 
-.main-form {
-	width: 450px;
-	margin: auto;
+body {
+	background-color: var(--white);
+	font-family: 'Mulish', sans-serif;
+	color: var(--dark);
+
+	.btn {
+		font: $font-bold-16;
+		border-radius: 23px;
+		color: var(--white);
+	}
+}
+
+header {
+	.logo {
+		padding: 35px 0;
+	}
+	.cta-header {
+		background-color: var(--yellow);
+		height: 60px;
+
+		.cta-text {
+			font: $font-extra-bold-18;
+			text-transform: uppercase;
+			color: var(--prim-blue);
+		}
+	}
+}
+
+.hero {
+	background: transparent url('/assets/images/BG-Azul.png') center no-repeat;
+	padding: 50px 0;
+	text-align: center;
+	height: 714px;
+
+	@media screen and (min-width: 992px) {
+		background-image: image-set(
+			url('/assets/images/Hero-Andres+Thumb.png') 1x,
+			url('/assets/images/Hero-Andres+Thumb@2x.png') 2x
+		);
+		height: auto;
+	}
+
+	.lead {
+		font: $font-semi-bold-22;
+		color: var(--white);
+	}
+
+	.h1 {
+		font: $font-extra-bold-32;
+		color: var(--yellow);
+		text-transform: uppercase;
+	}
+
+	.hero-text {
+		font: $font-semi-bold-20;
+		color: var(--white);
+	}
+
+	.h2 {
+		font: $font-extra-bold-26;
+		color: var(--yellow);
+		text-transform: uppercase;
+	}
+
+	.hero-video {
+		padding: 30px 0;
+	}
+
+	.hero-button {
+		// padding-bottom: 50px;
+
+		.btn {
+			text-transform: uppercase;
+			padding: 16px 30px;
+			box-shadow: 0px 15px 58px #00000038;
+		}
+	}
+}
+
+.call-outs {
+	padding: 80px 0 65px 0;
+
+	img {
+		padding: 36px 0 24px 0;
+	}
+
+	.icon-headline {
+		font: $font-extra-bold-30;
+	}
+
+	.icon-text {
+		font: $font-regular-24;
+		color: var(--dark-gray);
+
+		b,
+		strong {
+			font-weight: 700;
+		}
+	}
+}
+
+.img-section {
+	background-color: var(--sky-blue);
+	padding: 60px 0;
+
+	ul.carousel-indicators {
+		li {
+			width: 18px;
+			height: 18px;
+			border: 2px solid #576078;
+			border-radius: 50%;
+			margin: 0 9px;
+		}
+		li.active {
+			background-color: #ff7600;
+			border: none;
+		}
+	}
+
+	.carousel-caption {
+		text-align: start;
+		top: 70%;
+	}
+
+	.closing-text {
+		padding-top: 55px;
+		font: $font-semi-bold-28;
+		text-align: center;
+
+		b,
+		strong {
+			color: var(--blue);
+		}
+	}
 }
