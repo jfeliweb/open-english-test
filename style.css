@@ -7605,7 +7605,11 @@ header .cta-header .btn {
   padding: 60px 0;
 }
 
-.img-section ul.carousel-indicators li {
+.img-section .carousel.slide {
+  padding: 0 50px;
+}
+
+.img-section .carousel.slide ul.carousel-indicators li {
   width: 18px;
   height: 18px;
   border: 2px solid #576078;
@@ -7613,12 +7617,12 @@ header .cta-header .btn {
   margin: 0 9px;
 }
 
-.img-section ul.carousel-indicators li.active {
+.img-section .carousel.slide ul.carousel-indicators li.active {
   background-color: #ff7600;
   border: none;
 }
 
-.img-section .carousel-caption {
+.img-section .carousel.slide .carousel-caption {
   text-align: start;
   top: 70%;
 }
