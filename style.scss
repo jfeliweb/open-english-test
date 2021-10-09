@@ -35,58 +35,6 @@ $font-family-base: $font-regular-24;
 	--red-organge: #ff6d00;
 	--dark: #000000;
 	--sky-blue: #eaf7ff;
-
-	/* Font/text values */
-	--unnamed-font-family-mulish: 'Mulish', sans-serif;
-	--unnamed-font-style-normal: normal;
-	--unnamed-font-weight-regular: regular;
-	--unnamed-font-weight-bold: bold;
-	--unnamed-font-weight-normal: normal;
-	--unnamed-font-size-16: 16px;
-	--unnamed-font-size-24: 24px;
-	--unnamed-font-size-38: 38px;
-	--unnamed-character-spacing-0: 0px;
-	--unnamed-line-spacing-28: 28px;
-	--unnamed-line-spacing-54: 54px;
-	--unnamed-line-spacing-28-80000114440918: 28.80000114440918px;
-}
-
-/* Character Styles */
-.unnamed-character-style-1 {
-	font-family: var(--unnamed-font-family-mulish);
-	font-style: var(--unnamed-font-style-normal);
-	font-weight: var(--unnamed-font-weight-normal);
-	font-size: var(--unnamed-font-size-16);
-	line-height: var(--unnamed-line-spacing-28);
-	letter-spacing: var(--unnamed-character-spacing-0);
-	color: var(--dark-gray);
-}
-.unnamed-character-style-2 {
-	font-family: var(--unnamed-font-family-mulish);
-	font-style: var(--unnamed-font-style-normal);
-	font-weight: var(--unnamed-font-weight-bold);
-	font-size: var(--unnamed-font-size-16);
-	line-height: var(--unnamed-line-spacing-28);
-	letter-spacing: var(--unnamed-character-spacing-0);
-	color: var(--unnamed-color-ff6600);
-}
-.unnamed-character-style-3 {
-	font-family: var(--unnamed-font-family-mulish);
-	font-style: var(--unnamed-font-style-normal);
-	font-weight: var(--unnamed-font-weight-bold);
-	font-size: var(--unnamed-font-size-24);
-	line-height: var(--unnamed-line-spacing-28-80000114440918);
-	letter-spacing: var(--unnamed-character-spacing-0);
-	color: var(--dark);
-}
-.unnamed-character-style-4 {
-	font-family: var(--unnamed-font-family-mulish);
-	font-style: var(--unnamed-font-style-normal);
-	font-weight: var(--unnamed-font-weight-bold);
-	font-size: var(--unnamed-font-size-38);
-	line-height: var(--unnamed-line-spacing-54);
-	letter-spacing: var(--unnamed-character-spacing-0);
-	color: var(--dark);
 }
 
 $theme-colors: (
@@ -219,8 +167,17 @@ header {
 .call-outs {
 	padding: 80px 0 65px 0;
 
+	.col-lg-4 {
+		padding: 0 50px;
+
+		:nth-child(1) img {
+			padding-top: 0;
+		}
+	}
+
 	img {
-		padding: 36px 0 24px 0;
+		padding-top: 36px;
+		padding-bottom: 24px;
 	}
 
 	.icon-headline {
