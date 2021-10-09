@@ -7526,23 +7526,28 @@ header .cta-header .btn {
   }
 }
 
-.hero .lead {
+.hero .hero-content {
+  padding: 0 30px;
+}
+
+.hero .hero-content .lead {
   font: normal 600 22px/27px "Mulish", sans-serif;
   color: var(--white);
 }
 
-.hero .h1 {
+.hero .hero-content .h1 {
   font: normal 800 32px/42px "Mulish", sans-serif;
   color: var(--yellow);
   text-transform: uppercase;
 }
 
-.hero .hero-text {
+.hero .hero-content .hero-text {
   font: normal 600 20px/28px "Mulish", sans-serif;
   color: var(--white);
+  padding: 0 3px;
 }
 
-.hero .h2 {
+.hero .hero-content .h2 {
   font: normal 800 26px/40px "Mulish", sans-serif;
   color: var(--yellow);
   text-transform: uppercase;

@@ -121,26 +121,31 @@ header {
 		height: 580px;
 	}
 
-	.lead {
-		font: $font-semi-bold-22;
-		color: var(--white);
-	}
+	.hero-content {
+		padding: 0 30px;
 
-	.h1 {
-		font: $font-extra-bold-32;
-		color: var(--yellow);
-		text-transform: uppercase;
-	}
+		.lead {
+			font: $font-semi-bold-22;
+			color: var(--white);
+		}
 
-	.hero-text {
-		font: $font-semi-bold-20;
-		color: var(--white);
-	}
+		.h1 {
+			font: $font-extra-bold-32;
+			color: var(--yellow);
+			text-transform: uppercase;
+		}
 
-	.h2 {
-		font: $font-extra-bold-26;
-		color: var(--yellow);
-		text-transform: uppercase;
+		.hero-text {
+			font: $font-semi-bold-20;
+			color: var(--white);
+			padding: 0 3px;
+		}
+
+		.h2 {
+			font: $font-extra-bold-26;
+			color: var(--yellow);
+			text-transform: uppercase;
+		}
 	}
 
 	.hero-video {
