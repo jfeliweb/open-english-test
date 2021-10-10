@@ -7491,7 +7491,7 @@ header .logo {
           align-items: center;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) {
   header .logo {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -7521,7 +7521,7 @@ header .cta-header .btn {
   text-transform: uppercase;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) {
   header .cta-header .cta-text {
     font-size: 18px;
   }
@@ -7538,7 +7538,7 @@ header .cta-header .btn {
   height: 714px;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
+@media (min-width: 992px) {
   .hero {
     background-image: -webkit-image-set(url("/assets/images/Hero-Andres+Thumb.png") 1x, url("/assets/images/Hero-Andres+Thumb@2x.png") 2x);
     background-image: image-set(url("/assets/images/Hero-Andres+Thumb.png") 1x, url("/assets/images/Hero-Andres+Thumb@2x.png") 2x);
@@ -7637,6 +7637,16 @@ header .cta-header .btn {
   font-weight: 700;
 }
 
+@media (min-width: 992px) {
+  .call-outs .col-lg-4 {
+    padding: 0;
+    border-right: 1px solid var(--snow-white);
+  }
+  .call-outs .col-lg-4:last-child {
+    border-right: none;
+  }
+}
+
 .img-section {
   background-color: var(--sky-blue);
   padding: 60px 0;
@@ -7662,6 +7672,20 @@ header .cta-header .btn {
 .img-section .carousel.slide .carousel-caption {
   text-align: start;
   top: 70%;
+}
+
+@media (min-width: 992px) {
+  .img-section .img-panel .figure .figure-img {
+    height: 357px;
+  }
+  .img-section .img-panel .figure .figure-caption {
+    font: normal 700 28px/19px "Mulish", sans-serif;
+    color: var(--white);
+    position: relative;
+    right: 15%;
+    left: 15%;
+    top: -6rem;
+  }
 }
 
 .img-section .closing-text {

@@ -80,7 +80,7 @@ header {
 		justify-content: center;
 		align-items: center;
 
-		@include media-breakpoint-between(lg, xl) {
+		@include media-breakpoint-up(lg) {
 			justify-content: start;
 		}
 
@@ -105,7 +105,7 @@ header {
 			text-transform: uppercase;
 		}
 
-		@include media-breakpoint-between(lg, xl) {
+		@include media-breakpoint-up(lg) {
 			.cta-text {
 				font-size: 18px;
 			}
@@ -123,7 +123,7 @@ header {
 	text-align: center;
 	height: 714px;
 
-	@include media-breakpoint-between(lg, xl) {
+	@include media-breakpoint-up(lg) {
 		background-image: image-set(
 			url('/assets/images/Hero-Andres+Thumb.png') 1x,
 			url('/assets/images/Hero-Andres+Thumb@2x.png') 2x
@@ -223,6 +223,16 @@ header {
 			font-weight: 700;
 		}
 	}
+
+	@include media-breakpoint-up(lg) {
+		.col-lg-4 {
+			padding: 0;
+			border-right: 1px solid var(--snow-white);
+		}
+		.col-lg-4:last-child {
+			border-right: none;
+		}
+	}
 }
 
 .img-section {
@@ -252,6 +262,24 @@ header {
 		}
 	}
 
+	@include media-breakpoint-up(lg) {
+		.img-panel {
+			.figure {
+				.figure-img {
+					height: 357px;
+				}
+
+				.figure-caption {
+					font: $font-bold-28;
+					color: var(--white);
+					position: relative;
+					right: 15%;
+					left: 15%;
+					top: -6rem;
+				}
+			}
+		}
+	}
 	.closing-text {
 		padding-top: 55px;
 		font: $font-semi-bold-28;
