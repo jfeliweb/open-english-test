@@ -228,6 +228,11 @@ header {
 		.col-lg-4 {
 			padding: 0;
 			border-right: 1px solid var(--snow-white);
+
+			h3.icon-headline,
+			.icon-text {
+				padding: 0 50px;
+			}
 		}
 		.col-lg-4:last-child {
 			border-right: none;
@@ -264,19 +269,19 @@ header {
 
 	@include media-breakpoint-up(lg) {
 		.img-panel {
-			.figure {
-				.figure-img {
-					height: 357px;
-				}
+			.row {
+				--bs-gutter-x: -10rem;
+			}
+			.figure-img {
+			}
 
-				.figure-caption {
-					font: $font-bold-28;
-					color: var(--white);
-					position: relative;
-					right: 15%;
-					left: 15%;
-					top: -6rem;
-				}
+			.figure-caption {
+				font: $font-bold-28;
+				color: var(--white);
+				position: relative;
+				right: 15%;
+				left: 17%;
+				top: -8rem;
 			}
 		}
 	}
@@ -288,6 +293,11 @@ header {
 		b,
 		strong {
 			color: var(--blue);
+		}
+
+		@include media-breakpoint-up(lg) {
+			padding-top: 0;
+			margin: 0 9rem;
 		}
 	}
 }

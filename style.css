@@ -7642,6 +7642,10 @@ header .cta-header .btn {
     padding: 0;
     border-right: 1px solid var(--snow-white);
   }
+  .call-outs .col-lg-4 h3.icon-headline, .call-outs .col-lg-4 .icon-headline.h3,
+  .call-outs .col-lg-4 .icon-text {
+    padding: 0 50px;
+  }
   .call-outs .col-lg-4:last-child {
     border-right: none;
   }
@@ -7675,16 +7679,16 @@ header .cta-header .btn {
 }
 
 @media (min-width: 992px) {
-  .img-section .img-panel .figure .figure-img {
-    height: 357px;
+  .img-section .img-panel .row {
+    --bs-gutter-x: -10rem;
   }
-  .img-section .img-panel .figure .figure-caption {
+  .img-section .img-panel .figure-caption {
     font: normal 700 28px/19px "Mulish", sans-serif;
     color: var(--white);
     position: relative;
     right: 15%;
-    left: 15%;
-    top: -6rem;
+    left: 17%;
+    top: -8rem;
   }
 }
 
@@ -7697,5 +7701,12 @@ header .cta-header .btn {
 .img-section .closing-text b,
 .img-section .closing-text strong {
   color: var(--blue);
+}
+
+@media (min-width: 992px) {
+  .img-section .closing-text {
+    padding-top: 0;
+    margin: 0 9rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
